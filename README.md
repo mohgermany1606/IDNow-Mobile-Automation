@@ -13,8 +13,8 @@ This project is a Python-based test framework using the unittest module to test 
 
 1. Clone this repository to your local machine:
 
-   - git clone https://github.com/mohgermany1606/IDNow-Mobile-Automation.git
-   - cd IDNow-Mobile-Automation
+   - git clone https://github.com/mohgermany1606/IDNow_API_Automation.git
+   - cd IDNow_API_Automation
 
 2. python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
