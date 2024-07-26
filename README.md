@@ -8,19 +8,12 @@ This project is a Python-based test framework using the unittest module to test 
 - 'requests' library
 -  'pytest' library
 - 'jsonschema' library
-### Files
-
-1. **test_api.py:**
-   - Contains the test cases for the API.
-   
-2. **requirements.txt:**
-   - Lists the dependencies required for the project.
 
 ## Installation
 
 1. Clone this repository to your local machine:
 
-   git clone https://github.com/mohgermany1606/api_test_framework.git
+   git clone https://github.com/mohgermany1606/IDNow-Mobile-Automation.git
    cd api_test_framework
 
 2. python -m venv venv
