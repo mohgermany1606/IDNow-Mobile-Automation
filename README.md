@@ -30,21 +30,26 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 3. Install the dependencies
  pip install -r requirements.txt
 
- **Run Test -**
-python test_api.py
+# Files
+
+**requirements.txt**
+This file contains the list of dependencies required for the project:
+1. requests
+2. pytest
+3. jsonschema
 
 
-**test_api.py**
+**config/config.py**
+It contains BASE URL which is used in base_test.py
 
-Includes a sample test case test_autoident_browser_support to check the presence of the 'min' key in the browser support matrix.
-
-----
-
-**base_test.py**
-It provides an'APIClient' class for making HTTP Requests.It has methods like get, post, put, and delete for interacting with APIs
+**tests/test_api.py**
+The test case test_autoident_browser_support checks if the autoident key exists and verifies that the min key is present for every browser in the browserSupportMatrix.
 
 
-Class Methods
+**utils/base_test.py**
+It provides an'APIClient' class for making HTTP Requests.It includes methods for making GET, POST, PUT, and DELETE requests to the API
+
+It has below class methods - 
 
 **setUpClass(cls)**: Sets up the test case, including the base URL and a session.
 
@@ -58,18 +63,17 @@ Class Methods
 
 **delete(self, url)**: Performs a DELETE request.
 
-**test_autoident_browser_support(self)**: Test case to validate the autoident key's browser support matrix.
+**check_min_key_exists(self, browser_dict)**: Checks whether the 'min' key exists for every browser in the given dictionary.
 
-check_min_key_exists(self, browser_dict): Checks whether the 'min' key exists for every browser in the given dictionary.
-
-## Test Case
-The test case test_autoident_browser_support checks if the autoident key exists and verifies that the min key is present for every browser in the browserSupportMatrix.
 
 **requirements.txt**
 This file contains the list of dependencies required for the project:
 requests
 pytest
 jsonschema
+
+ **Run Test -**
+Test can be run using command pytest -s
 
 
 
