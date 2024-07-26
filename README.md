@@ -40,7 +40,7 @@ The test case test_autoident_browser_support checks if the autoident key exists 
 
 
 **utils/base_test.py**
-It provides an'APIClient' class for making HTTP Requests.It includes methods for making GET, POST, PUT, and DELETE requests to the API
+It provides an'BaseTest' class for making HTTP Requests.It includes methods for making GET, POST, PUT, and DELETE requests to the API
 
 It has below class methods - 
 
